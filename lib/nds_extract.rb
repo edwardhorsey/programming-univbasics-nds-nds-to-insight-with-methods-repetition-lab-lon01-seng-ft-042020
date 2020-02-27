@@ -46,8 +46,9 @@ def total_gross(source)
   # return the total
   index = 0
   totalgross = 0
+  list = list_of_directors(source)
     while index < list_of_directors.count do
-      totalgross += directors_totals[list_of_directors[index]]
+      totalgross += directors_totals[list[index]]
       index += 1
     end
   totalgross
