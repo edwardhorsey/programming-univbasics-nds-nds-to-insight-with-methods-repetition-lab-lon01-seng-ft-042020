@@ -47,8 +47,9 @@ def total_gross(source)
   index = 0
   totalgross = 0
   list = list_of_directors(source)
-    while index < list.count do
-      totalgross += directors_totals[list[index]]
+  hashd = directors_totals(source)
+      while index < list.count do
+      totalgross += hashd[list[index]]
       index += 1
     end
   totalgross
